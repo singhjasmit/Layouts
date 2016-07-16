@@ -6,17 +6,36 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/lblComments"
+        android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comments"
+        android:text="Name"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
 
     <EditText
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_below="@+id/lblName"
+        android:hint="First Name, Last Name"
+      />
+    <TextView
+        android:id="@+id/lblComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:layout_below="@+id/txtName"
+         />
+
+    <EditText
         android:id="@+id/txtComments"
         android:layout_width="fill_parent"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:lines="4"
         android:textSize="18sp"
         android:layout_alignLeft="@+id/lblComments"
         android:layout_below="@+id/lblComments"
